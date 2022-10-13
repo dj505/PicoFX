@@ -381,7 +381,17 @@
         "nets": [
           "+3.3V",
           "+5V",
-          "GND"
+          "GND",
+          "P1 CN LED",
+          "P1 DL LED",
+          "P1 DR LED",
+          "P1 UL LED",
+          "P1 UR LED",
+          "P2 CN LED",
+          "P2 DL LED",
+          "P2 DR LED",
+          "P2 UL LED",
+          "P2 UR LED"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
