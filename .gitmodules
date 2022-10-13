@@ -7,3 +7,6 @@
 [submodule "KiCad-RP-Pico"]
 	path = KiCad-RP-Pico
 	url = https://github.com/ncarandini/KiCad-RP-Pico
+[submodule "WS2812B.pretty"]
+	path = WS2812B.pretty
+	url = https://github.com/madworm/WS2812B.pretty
