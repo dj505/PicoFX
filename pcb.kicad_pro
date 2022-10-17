@@ -333,7 +333,7 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "unannotated": "error",
       "unit_value_mismatch": "error",
@@ -379,7 +379,6 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
-          "+3.3V",
           "+5V",
           "GND",
           "P1 CN LED",
