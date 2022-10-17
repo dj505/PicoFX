@@ -1,5 +1,5 @@
 Drill report for pcb.kicad_pcb
-Created on 2022-10-17 1:18:44 PM
+Created on 2022-10-17 2:51:30 PM
 
 Copper Layer Stackup:
     =============================================================
@@ -14,9 +14,10 @@ Drill file 'pcb-PTH.drl' contains
     T2  1.000mm  0.0394"  (3 holes)
     T3  1.020mm  0.0402"  (43 holes)
     T4  1.040mm  0.0409"  (20 holes)
-    T5  1.470mm  0.0579"  (20 holes)
+    T5  1.100mm  0.0433"  (8 holes)
+    T6  1.470mm  0.0579"  (20 holes)
 
-    Total plated holes count 96
+    Total plated holes count 104
 
 
 Drill file 'pcb-NPTH.drl' contains
