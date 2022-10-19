@@ -2,7 +2,7 @@
 A compact keyboard-style controller for Pump it Up simulators
 
 ## Components
-
+**This list is not final! Please double check before purchasing materials.**
 - Raspberry Pi Pico (**NOT** Pico H, headers need to be soldered in a specific order)
 - 3D printed shell (to be added to the repo later)
 - 4x M3.5 8mm machine screws
