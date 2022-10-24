@@ -6,7 +6,7 @@ A compact keyboard-style controller for Pump it Up simulators
 - Raspberry Pi Pico (**NOT** Pico H, headers need to be soldered in a specific order!)
   - A Pico W should also work, but this project currently has no WiFi or Bluetooth functionality. This may change in the future.
 - 3D printed shell (to be added to the repo later)
-- 8x 6x2.7mm neodymium magnets
+- 8x 6x2.7mm neodymium magnets (if using original 3D printed case)
 - 10x MX-compatible keycaps, ideally a "flat" or uniform profile like DSA, XDA, F10, etc.
   - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
 - **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
@@ -36,6 +36,6 @@ Feel free to use whichever switches and keycaps you want, as long as they're Che
 
 ## Flashing the Firmware
 
-For the time being, see the [piuio-pico](https://github.com/48productions/piuio-pico/) repository by [48productions](https://github.com/48productions). This firmware emulates a PIUIO board and can be used on Windows devices via IO2Key ([helpful installation video](https://www.youtube.com/watch?v=xo5m9dlNFfY) by Nirvash) or on Linux via a [custom kernel driver](https://github.com/DinsFire64/piuio) (installation instructions in the README).
+For the time being, see the [piuio-pico](https://github.com/48productions/piuio-pico/) repository by [48productions](https://github.com/48productions). This firmware emulates a PIUIO board and can be used on Windows devices via IO2Key ([helpful installation video](https://www.youtube.com/watch?v=xo5m9dlNFfY) by Nirvash) or on Linux via a [custom kernel driver](https://github.com/DinsFire64/piuio) (installation instructions in the README). ***Do not*** use this firmware on any hand controller to play the latest official game online! It is considered cheating and you will be banned. Using any aspect of this project for prohobitied play on officially supported games is not endorsed, encouraged, or supported. However, do feel free to use this firmware to build a proper dance pad.
 
-Dedicated HID controller firmware coming Eventually™
+Dedicated HID controller firmware for simulators and such coming Eventually™
