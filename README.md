@@ -11,8 +11,7 @@ A compact keyboard-style controller for Pump it Up simulators
   - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
 - **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
   - 10x 0805 SMD resistors (330Ohm) - only required if using the above LEDs
-- **(OPTIONAL)** Strip of 10 WS2812B LEDs for underglow lighting
-  - Ideally around 90 LEDs/meter density to ensure they all fit in a single line along the length of the PCB, though you're free to play around with the layout
+- **(OPTIONAL)** Strip of 8 WS2812B LEDs for underglow lighting
 
 Feel free to use whichever switches and keycaps you want, as long as they're Cherry MX compatible!
 
