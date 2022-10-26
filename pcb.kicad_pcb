@@ -8071,7 +8071,7 @@
   (gr_text "GP14" (at 178.816 106.934 -225) (layer "B.SilkS") (tstamp 42ed1072-6fc6-4043-8e41-9a83fb637f26)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "WS2812B\n(5 LEDs)" (at 92.075 89.662) (layer "B.SilkS") (tstamp 4c2c780a-ff49-48c2-be43-edf5126fcb64)
+  (gr_text "WS2812B\n(6 LEDs)" (at 92.075 89.662) (layer "B.SilkS") (tstamp 4c2c780a-ff49-48c2-be43-edf5126fcb64)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text "P2 CN" (at 173.0375 87.63) (layer "B.SilkS") (tstamp 4e940c62-735f-4f43-948b-05201ea4348e)
