@@ -11,10 +11,12 @@ A compact keyboard-style controller for Pump it Up simulators
 - 10x MX-compatible keycaps, ideally a "flat" or uniform profile like DSA, XDA, F10, etc.
   - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
 - **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
-  - 10x SMD resistors **(330Ohm 0805)** - only required if using the above LEDs
+  - 10x SMD resistors **(330Ohm 0805)\*** - only needed if using the above LEDs
 - **(OPTIONAL)** 6 WS2812B LEDs for underglow lighting
-  - Option 1: There are foorprints for 6 individual WS2812B LEDs **(PLCC4, 5x5mm)** with accompanying **1000uF 0805 SMD capacitors** around the perimiter of the case. The capacitor footprints were chosen with hand soldering in mind. This option will likely look nicer, but may be more difficult for beginners to solder. **If your LEDs do not have capacitors built in, these will need to be purchased separately.**
+  - Option 1: There are foorprints for 6 individual WS2812B LEDs **(PLCC4, 5x5mm)** with accompanying **1000uF 0805 SMD capacitors\*** around the perimiter of the case. The capacitor footprints were chosen with hand soldering in mind. This option will likely look nicer, but may be more difficult for beginners to solder. **If your LEDs do not have capacitors built in, these will need to be purchased separately.**
   - Option 2: A regular WS2812B strip cut down to 6 LEDs in length can be soldered to the three pins on the left hand side of the board (from the back) and adhered along the length of the PCB. This option is more friendly to beginners or those who aren't as confident with SMD soldering, but the lighting it provides isn't quite as even. **Requires jumping the "Strip Enable" pad.**
+
+\* Components that don't *need* to be installed, though lacking them may cause minor issues. WS2812B LEDs may be unstable without capacitors, and in-switch LEDs should have current limiting resistors so they don't eat too much current and burn out. The controller can be assembled without these components initially and they can be added later if problems arise, though the resistor pads would need to be bridged with solder.
 
 Feel free to use whichever switches and keycaps you want, as long as they're Cherry MX compatible!
 
