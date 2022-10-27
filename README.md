@@ -2,19 +2,25 @@
 A compact, feature-rich keyboard-style controller for Pump it Up simulators
 
 ## Components
+Many components listed below are optional. If you prefer to spend as little as possible on this build, they can be entirely omitted. In the case of the FR4 plate, leaving it out will require you to 3D print or laser cut a plate/case.
 
-- Raspberry Pi Pico (**NOT** Pico H, headers need to be soldered in a specific order!)
+- Raspberry Pi Pico (**NOT** Pico H)
   - A Pico W should also work, but this project currently has no WiFi or Bluetooth functionality. This may change in the future.
+  - A Pico H would require female pin headers to be installed, as the headers are attached before the switches, but the Pico is installed after the switches. Installing the Pico too early would make 1 switch and LED impossible to solder.
 - 3D printed shell (to be added to the repo later)
-- 8x 6x2.7mm neodymium magnets (if using original 3D printed case)
+- 2x right angle tactile switches ([PTS645VL39-2 LFS](https://www.digikey.ca/en/products/detail/c-k/PTS645VL39-2-LFS/1146765) or similar)
 - 10x MX-compatible keyboard switches of your choosing
 - 10x MX-compatible keycaps, ideally a "flat" or uniform profile like DSA, XDA, F10, etc.
   - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
+- **(OPTIONAL*)** 8x 6x2.7mm neodymium magnets (**required if** using 3D printed case instead of FR4 plate)
 - **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
   - 10x SMD resistors **(330Ohm 0805)\*** - only needed if using the above LEDs
 - **(OPTIONAL)** 6 WS2812B LEDs for underglow lighting
   - Option 1: There are foorprints for 6 individual WS2812B LEDs **(PLCC4, 5x5mm)** with accompanying **1000uF 0805 SMD capacitors\*** around the perimiter of the case. The capacitor footprints were chosen with hand soldering in mind. This option will likely look nicer, but may be more difficult for beginners to solder. **If your LEDs do not have capacitors built in, these will need to be purchased separately.**
   - Option 2: A regular WS2812B strip cut down to 6 LEDs in length can be soldered to the three pins on the left hand side of the board (from the back) and adhered along the length of the PCB. This option is more friendly to beginners or those who aren't as confident with SMD soldering, but the lighting it provides isn't quite as even. **Requires jumping the "Strip Enable" pad.**
+
+- 1x Main PCB
+- **(OPTIONAL but recommended)** 1x FR4 plate
 
 \* Components that don't *need* to be installed, though lacking them may cause minor issues. WS2812B LEDs may be unstable without capacitors, and in-switch LEDs should have current limiting resistors so they don't eat too much current and burn out. The controller can be assembled without these components initially and they can be added later if problems arise, though the resistor pads would need to be bridged with solder.
 
