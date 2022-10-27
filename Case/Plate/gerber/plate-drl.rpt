@@ -1,0 +1,24 @@
+Drill report for plate.kicad_pcb
+Created on 2022-10-26 11:53:51 PM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'plate-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (1 hole)
+    T2  1.000mm  0.0394"  (3 holes)
+    T3  1.100mm  0.0433"  (8 holes)
+
+    Total plated holes count 12
+
+
+Drill file 'plate-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
