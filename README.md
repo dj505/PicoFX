@@ -1,5 +1,5 @@
-# handpump-con
-A compact keyboard-style controller for Pump it Up simulators
+# PicoFX
+A compact, feature-rich keyboard-style controller for Pump it Up simulators
 
 ## Components
 
