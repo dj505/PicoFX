@@ -1,4 +1,4 @@
-21018472419238116
+21021806105447272
 Alps_Only
 ALPS-1.5U
 
@@ -58128,6 +58128,13 @@ CenterStep
 0
 0
 LogoFootprints
+CenterStep_6mm
+
+
+0
+0
+0
+LogoFootprints
 InfinitesimalLogo
 
 
@@ -58150,6 +58157,13 @@ InfinitesimalLoop
 0
 LogoFootprints
 InfinitesimalLoop_18mm
+
+
+0
+0
+0
+LogoFootprints
+PicoFX
 
 
 0

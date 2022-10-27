@@ -9922,7 +9922,7 @@
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (gr_text "https://github.com/dj505/Infinitesimal\n" (at 110.998 123.952) (layer "B.SilkS") (tstamp 3f830cda-ec65-4453-897d-6026a4971062)
-    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (effects (font (size 0.85 0.85) (thickness 0.1875)) (justify mirror))
   )
   (gr_text "GP14" (at 178.816 106.934 -225) (layer "B.SilkS") (tstamp 42ed1072-6fc6-4043-8e41-9a83fb637f26)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
