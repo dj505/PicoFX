@@ -21,6 +21,7 @@ A compact keyboard-style controller for Pump it Up simulators
 Feel free to use whichever switches and keycaps you want, as long as they're Cherry MX compatible!
 
 ## How To Build
+**Note:** These instructions are a BIG work in progress! They do not yet take into account the FR4 plate, and likely will not be updated until I get boards manufactured and assembled so I can add photo references. It's not too difficult though and everything here still applies!
 
 1. Solder in a row of pin headers, with the **long** side sticking out of the "BACK" side of the PCB - do **NOT** solder the Pico onto the pin headers yet, otherwise you can't solder one of the switches and LEDs in!
     - If you don't have pin headers on hand, diode legs will work too. Place the PCB above a breadboard for stability and solder individual legs in place, then flip the board over and trim the excess.
