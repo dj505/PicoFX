@@ -1,8 +1,9 @@
 # PicoFX
-A compact, feature-rich keyboard-style controller for Pump it Up simulators  
+A compact, feature-rich keyboard-style controller for Pump it Up simulators
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
 
-![WS2812B Installation](Pictures/PicoFX.jpg)
+![Completed controller](Pictures/PicoFX.jpg)
 
 ## Table of Contents
 This readme may be rather large, but don't let that intimiate you! I've included as much information as possible to make sure this build is straightforward and beginner friendly. If you have any questions at all, feel free to shoot me a message through Discord (dj505#6697) or open an issue here.
@@ -77,7 +78,7 @@ This build applies to the **full materials list**, including the FR4 plate and s
 ![WS2812B Installation](Pictures/Step1.jpg)
 2. **Solder the SMD resistors in place.** The footprints used for these are made with hand soldering in mind, but if you have a hot air rework station, reflow oven, or any other fancy tools at your disposal, those work great too. If you don't feel comfortable soldering these, you *can* skip them and bridge the pads with solder, but it's not good practice.
 ![WS2812B Installation](Pictures/Step2.jpg)
-3. **Solder in the pin headers.** It doesn't really matter which orientation you use, but if you insert the **short** pins through the PCB (unlike what I did here) you can avoid some extra trimming. Inserting the long side through the PCB will require trimming on the other side to make sure there's enough clearance to mount the switches. **Do NOT solder the Pico yet.**
+3. **Solder in the pin headers.** It doesn't really matter which orientation you use, but if you insert the **short** pins through the PCB (unlike what I did here) you can avoid some extra trimming. Inserting the long side through the PCB will require trimming on the other side to make sure there's enough clearance to mount the switches. **Do NOT solder the Pico yet.** Optionally, if you don't have pin headers, you can use diole legs instead, or skip this step entirely and surface mount the Pico. This is not recommended, however, beacuse it may require trimming the switch step to ensure there's clearance, and absolutely requires trimming the LED/switch legs flush. Do this at your own risk.
 ![WS2812B Installation](Pictures/Step3.jpg)
 4. **If using the FR4 plate, solder in the other, smaller pin headers.** These go on the **FRONT** side of the board and connect with the top plate, so make sure the **long** side is facing up, as shown.
 ![WS2812B Installation](Pictures/Step4.jpg)
