@@ -31,21 +31,21 @@ Feel free to use whichever switches and keycaps you want, as long as they're Che
 This build applies to the **full materials list**, including the FR4 plate and surface mount parts. Text descriptions will be provided for the optional alternatives, such as replacing SMD LEDs with LED strips or skpping the FR4 plate. Be sure to read through each step in its entirety before doing anything!
 
 1. **Solder the WS2812B LEDs in place.** If using an LED strip, skip this step. The notch present on each LED should be positioned on the bottom right side. These can be finicky to solder - don't heat them for too long!
-![WS2812B Installation](Pictures/Step 1 - WS2812.jpg)
+![WS2812B Installation](Pictures/Step1.jpg)
 2. **Solder the SMD resistors in place.** The footprints used for these are made with hand soldering in mind, but if you have a hot air rework station, reflow oven, or any other fancy tools at your disposal, those work great too.
-![WS2812B Installation](Pictures/Step 2 - Resistors.jpg)
+![WS2812B Installation](Pictures/Step2.jpg)
 3. **Solder in the pin headers.** It doesn't really matter which orientation you use, but if you insert the **short** pins through the PCB (unlike what I did here) you can avoid some extra trimming. Inserting the long side through the PCB will require trimming on the other side to make sure there's enough clearance to mount the switches. **Do NOT solder the Pico yet.**
-![WS2812B Installation](Pictures/Step 3 - Pin Headers.jpg)
+![WS2812B Installation](Pictures/Step3.jpg)
 4. **If using the FR4 plate, solder in the other, smaller pin headers.** These go on the **FRONT** side of the board and connect with the top plate, so make sure the **long** side is facing up, as shown.
-![WS2812B Installation](Pictures/Step 4 - Pin Headers Again.jpg)
+![WS2812B Installation](Pictures/Step4.jpg)
 5. **Mount the switches in the plate. Mount the plate on the main PCB.** Before you solder, make sure no legs are bent under the PCB and all of them are poking through the solder pads. Also insert and solder the LEDs one at a time. Pro tip - test your LEDs and make sure that they both work and are the right colour before soldering them in! The longer leg (cathode) is marked "+" with a round hole, and the shorter leg (anode) is marked "-" with a square hole. **Note: if your switches require LEDs to be mounted underneath, make sure to insert those first.**
-![WS2812B Installation](Pictures/Step 5 - LEDs and Switches.jpg)
+![WS2812B Installation](Pictures/Step5.jpg)
 6. **Solder the test and service buttons.** If you **are** using the FR4 plate, make sure you solder these to the holes on the plate as shown below. In either configuration, the switches should end up on the bottom of the PCB, not sticking out the top. To avoid sharp solder spikes, consider trimming the legs flush before soldering.
-![WS2812B Installation](Pictures/Step 6 - Test and Service.jpg)
+![WS2812B Installation](Pictures/Step6.jpg)
 7. **Solder the pin headers for the test and service buttons** if you haven't done so already. As with the previous step, consider trimming the pins flush before soldering to avoid sharp solder spikes.
-![WS2812B Installation](Pictures/Step 7 - Test and Service Jumpers.jpg)
+![WS2812B Installation](Pictures/Step7.jpg)
 8. **Install the Raspberry Pi Pico.** The fun part! Simply place it on the pin headers and solder each pin in place.
-![WS2812B Installation](Pictures/Step 8 - Pi Pico.jpg)
+![WS2812B Installation](Pictures/Step8.jpg)
 
 ## Flashing the Firmware
 
