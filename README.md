@@ -13,7 +13,7 @@ Many components listed below are optional. If you prefer to spend as little as p
 - 10x MX-compatible keyboard switches of your choosing
 - 10x MX-compatible keycaps, ideally a "flat" or uniform profile like DSA, XDA, F10, etc.
   - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
-- **(OPTIONAL*)** 4x M3.5*8mm pan head machine screws
+- **(OPTIONAL\*)** 4x M3.5*8mm pan head machine screws
 - **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
   - 10x [330Ohm 0805 SMD resistors](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.html) - only needed if using the above LEDs
 - **(OPTIONAL)** 6 [WS2812B LEDs](https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html) for underglow lighting
@@ -30,9 +30,9 @@ Feel free to use whichever switches and keycaps you want, as long as they're Che
 ## How To Build
 This build applies to the **full materials list**, including the FR4 plate and surface mount parts. Text descriptions will be provided for the optional alternatives, such as replacing SMD LEDs with LED strips or skpping the FR4 plate. Be sure to read through each step in its entirety before doing anything!
 
-1. **Solder the WS2812B LEDs in place.** If using an LED strip, skip this step. The notch present on each LED should be positioned on the bottom right side. These can be finicky to solder - don't heat them for too long!
+1. **Solder the WS2812B LEDs in place.** If using an LED strip, skip this step and wait until step 9. The notch present on each LED should be positioned on the bottom right side. These can be finicky to solder - don't heat them for too long!
 ![WS2812B Installation](Pictures/Step1.jpg)
-2. **Solder the SMD resistors in place.** The footprints used for these are made with hand soldering in mind, but if you have a hot air rework station, reflow oven, or any other fancy tools at your disposal, those work great too.
+2. **Solder the SMD resistors in place.** The footprints used for these are made with hand soldering in mind, but if you have a hot air rework station, reflow oven, or any other fancy tools at your disposal, those work great too. If you don't feel comfortable soldering these, you *can* skip them and bridge the pads with solder, but it's not good practice.
 ![WS2812B Installation](Pictures/Step2.jpg)
 3. **Solder in the pin headers.** It doesn't really matter which orientation you use, but if you insert the **short** pins through the PCB (unlike what I did here) you can avoid some extra trimming. Inserting the long side through the PCB will require trimming on the other side to make sure there's enough clearance to mount the switches. **Do NOT solder the Pico yet.**
 ![WS2812B Installation](Pictures/Step3.jpg)
@@ -46,6 +46,9 @@ This build applies to the **full materials list**, including the FR4 plate and s
 ![WS2812B Installation](Pictures/Step7.jpg)
 8. **Install the Raspberry Pi Pico.** The fun part! Simply place it on the pin headers and solder each pin in place.
 ![WS2812B Installation](Pictures/Step8.jpg)
+9. **If you didn't surface mount solder the WS2812B LEDs and opted for a strip**, cut the strip to a length of 6 LEDs. You may need to trim the legs of the LEDs along the bottom of the board so the LED strip can sit flat and stick properly. Jump the 2 pads labelled "Strip Enable" with a blob of solder, and wire up the LED strip to the corresponding pads. Ensure you're soldering to the "DI" or "DIN" pin on the LED strip! If you solder to "DO" or "DOUT" then your LEDs will not light up. (Note: lengths longer than 6 LEDs will work but may exceed the standard USB 500mA current draw and will require changes to the firmware.)
+
+You're done! Flash the firmware, install the bottom half of the case, and you're good to go.
 
 ## Flashing the Firmware
 
