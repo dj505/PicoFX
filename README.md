@@ -1,6 +1,17 @@
 # PicoFX
 A compact, feature-rich keyboard-style controller for Pump it Up simulators
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
+
 ![WS2812B Installation](Pictures/PicoFX.jpg)
+
+## Table of Contents
+This readme may be rather large, but don't let that intimiate you! I've included as much information as possible to make sure this build is straightforward and beginner friendly. If you have any questions at all, feel free to shoot me a message through Discord (dj505#6697) or open an issue here.
+* [Component List](#components)
+* [Ordering the PCBs](#ordering-the-pcbs) (for first time/inexperienced builders)
+* [Ordering the Parts](#ordering-the-parts) (for first time/inexperienced builders)
+* [How to Build](#how-to-build)
+* [Flashing the Firmware](#flashing-the-firmware)
+* [FAQ](#faq]
 
 ## Components
 Many components listed below are optional. If you prefer to spend as little as possible on this build, they can be entirely omitted. In the case of the FR4 plate, leaving it out will require you to 3D print or laser cut a plate/case.
@@ -24,6 +35,40 @@ Many components listed below are optional. If you prefer to spend as little as p
 - **(OPTIONAL but recommended)** 1x FR4 plate
 
 Feel free to use whichever switches and keycaps you want, as long as they're Cherry MX compatible!
+
+## Ordering the PCBs
+If you've never ordered PCBs before, don't worry! The process is super simple on most websites. These instructions are here to make sure each step is clear and straightforward, and to avoid accidentally ordering a set of boards with the wrong optons. Keep in mind, most manufacturers have a **minimum order number of 3-5**, which means you're going to need to order at least 3-5 of each PCB (main board and plate). **Feel free** to put together a group order with friends or sell the extras! I really don't mind others making and selling units, just make sure they're well made, thoroughly tested, and work properly (and consider [donating a couple bucks](https://ko-fi.com/dj505piu) if you can!)
+Here are my recommendations:
+| Manufacturer | Minimum order number | Notes |
+|--------------|----------------------|-------|
+|JLCPCB        |5 per PCB             |New users get a reasonably large discount on their first few orders, unless this has changed since I used up all of mine. Easy quote/ordering process, most options are autodetected from the gerber file.|
+|PCBWay        |5 per PCB             |PCBWay also gives new users a reasonable discount on their first order. Unsure of the specifics, haven't used them yet. More options need to be manually specified during the quote/order process than with JLC.|
+|OSH Park      |3 per PCB             |Fewer options than the above two, but the minimum order number is smaller. Colour options are limited to purple and "after dark", a clear solder mask over black substrate so all the traces are visible. Overall a bit more costly, but shipping is generally as they're based in the United States.|
+
+PCBWay and some other manufacturers will likely need you to manually specify the PCB dimensions. To save you some time, here are the dimensions for both PCBs:
+| PCB | Width | Height |
+|-----|-------|--------|
+|Main board|120.7|70.6 mm|
+|Plate|139.1 mm|77.2 mm|
+
+The ordering process generally looks something like this:
+1. Download the gerber(s) you plan to order. The main PCB can be found in this repository's main "gerber" folder and is titled "gerber.zip". Download it and ideally rename it to something like "main_board.zip" or anything that makes it clear which specific board it's for. If you plan to use the plate as well, browse to the "Case" folder, then to "Plate" and "gerber" where you can find the gerber.zip for the plate. Download and rename it accordingly as well. **None of the other files are needed - just the zip files.**
+2. Visit the manufacturer's website and look for the "Get Quote" or "Instant Quote" button, or a drag-and-drop section you can upload the gerber file to. Most sites generally only accpet one gerber at a time. Some sites have a "Different Design" option you may be tempted to set to "2" if you're ordering both boards - there's no need to do this. It makes the process more complicated and possibly more expensive. Simply add both PCBs to your cart individually and order them together once they're in there.
+3. Punch in the necessary options. The majority of these don't need to be changed and you can leave them be, however I recommend making sure the following are correct for **both** PCBs:
+    * PCB thickness: 1.6
+    * Surface Finish: LeadFree HASL **OR** ENIG (gold finish, more expensive but really cool and higher quality, but only recommended for the main PCB as the plate doesn't have enough solder points to warrant it)
+    * Copper Weight: 1oz
+You can pick whichever solder mask colour you want - this is the colour your final boards will appear. If you want, you can have different colours for the main PCB and the plate!
+4. **Recommended, but optional** - For the main board, you may want to add a note to the order to clarify that one of the design choices used by the keyboard switch footprint is intentional. The top layer's solder points are covered by solder mask to give it a cleaner look, as no soldering will ever be done on that side. JLCPCB calls this option "PCB Remark" and you can find it near the bottom of the page. The message I personally added to my order was
+    * `The pads covered by solder mask on the top layer are OK and are an intended part of the design.`
+5. Finally, add your order to your cart! Once you have your desired orders ready, the rest of the process is identical to any other online shopping site. Pick your shipping option, pay, and you're good to go!
+
+## Ordering the parts
+To make sourcing a little easier and cheaper, you can find all the parts for this project on [LCSC](https://lcsc.com).
+The bare minimum numbers of each part per controller are listed below, but I would **highly recommend** ordering a few extras of each, as they're very small and can be easily lost or damaged. Thankfully they're very inexpensive and adding extras will only cost you a few cents to a dollar more. See the [Components section](#components) for a recap of what is/isn't optional and the alternatives for each.
+* 6 x [WS2812B RGB LED](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html) (3 extra recommended per controller)
+* 10 x [0805 330ohm SMD resistor](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.html) (5 extra recommended per controller but they're so cheap you can order literally hundreds for well under a dollar total)
+* 2 x [right angle tactile switches](https://lcsc.com/product-detail/Tactile-Switches_C-K-PTS645VL392LFS_C285523.html) (1 extra recommended per controller at most, they're super easy to solder but it would suck if one arrived damaged or DOA)
 
 ## How To Build
 This build applies to the **full materials list**, including the FR4 plate and surface mount parts. Text descriptions will be provided for the optional alternatives, such as replacing SMD LEDs with LED strips or skpping the FR4 plate. Be sure to read through each step in its entirety before doing anything!
@@ -58,6 +103,18 @@ To install the firmware, plug in your Raspberry Pi Pico while holding the "BOOTS
 
 Dedicated HID controller firmware for simulators and such coming Eventually™
 
+## FAQ
+* Can I make and sell these, or sell extras?
+    * Go ahead! However, do make sure they're well built and thoroughly tested, and consider [donating a few bucks](https://ko-fi.com/dj505piu) if you can!
+* Does this work with official games?
+    * Yes, **however** using a hand controller on any currently online and supported game (XX 20th Anniversary Edition, at the time of writing) is considered cheating, especially during events, and you may get the game/machine banned or blacklisted.
+* Can I make this without any LEDs to start with and add them later?
+    * Mostly. There is one in-switch LED that won't be reachable once the Pico is soldered in. If you plan to add LEDs later on, either install sockets of some kind to account for this without needing to solder later, or install the Pico with male/female pin headers so you can remove it later to install LEDs. All RGB LEDs can be soldered at any time without removing the Pico.
+* How do I make the underglow work?
+    * If you're using this controller with IO2Key on Windows for StepF2/StepP1/StepPrime/StepPXX, underglow lighting will not work. Base StepMania or Project OutFox support lighting but extra manual configuration will need to be done, which I haven't had a chance to try yet. Linux users running StepMania or Project OutFox can use the kernel driver linked in [Flashing the Firmware](#flashing-the-firmware) for lighting support by editing Preferences.ini and editing the `LightsDriver` line to read `LightsDriver=PIUIO_Leds`.
+* Can I make this project USB C compatible somehow?
+    * If you can find a Pico clone that uses USB C and is pin-compatible with the official Raspberry Pi Pico, you absolutely can. I can't provide official support for multiple boards though, otherwise this project would get really messy really fast.
+    
 ## Special Thanks
 Thanks to
 - therathatter & 48productions (firmware things)
