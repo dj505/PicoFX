@@ -1,5 +1,5 @@
 # PicoFX
-A compact, feature-rich keyboard-style controller for Pump it Up simulators
+A compact, feature-rich keyboard-style controller for Pump it Up simulators  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
 
 ![WS2812B Installation](Pictures/PicoFX.jpg)
