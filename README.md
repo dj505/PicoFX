@@ -4,6 +4,7 @@ A compact, feature-rich keyboard-style controller for Pump it Up simulators
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
 
 ![Completed controller](Pictures/PicoFX.jpg)
+[See it in action!](https://www.youtube.com/watch?v=75ObKhgJE3M)
 
 ## Table of Contents
 This readme may be rather large, but don't let that intimiate you! I've included as much information as possible to make sure this build is straightforward and beginner friendly. If you have any questions at all, feel free to shoot me a message through Discord (dj505#6697) or open an issue here.
