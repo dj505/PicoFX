@@ -11,7 +11,7 @@ This readme may be rather large, but don't let that intimiate you! I've included
 * [Ordering the Parts](#ordering-the-parts) (for first time/inexperienced builders)
 * [How to Build](#how-to-build)
 * [Flashing the Firmware](#flashing-the-firmware)
-* [FAQ](#faq]
+* [FAQ](#faq)
 
 ## Components
 Many components listed below are optional. If you prefer to spend as little as possible on this build, they can be entirely omitted. In the case of the FR4 plate, leaving it out will require you to 3D print or laser cut a plate/case.
