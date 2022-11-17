@@ -13,7 +13,7 @@ Many components listed below are optional. If you prefer to spend as little as p
 - 10x MX-compatible keyboard switches of your choosing
 - 10x MX-compatible keycaps, ideally a "flat" or uniform profile like DSA, XDA, F10, etc.
   - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
-- **(OPTIONAL)** 4x M3.5*8mm pan head machine screws
+- **(OPTIONAL)** 4x M3*8mm pan head machine screws
 - **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
   - 10x [330Ohm 0805 SMD resistors](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.html) - only needed if using the above LEDs
 - **(OPTIONAL)** 6 [WS2812B LEDs](https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html) for underglow lighting
