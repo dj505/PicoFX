@@ -10,7 +10,7 @@ Recommended settings for beginners (aka, the ones I used):
 * Wall count: 2 minimum
 
 ## Plate
-This part is **not required** if you're using a second PCB as the plate (which would be recommended, as it's stronger and more functional). If you're **handwiring** a PicoFX without a PCB, this can also be used for that. You're going to need to figure out how to mount the test/service buttons yourself though, as this isn't method won't be officially documented.
+This part is **not required** if you're using a second PCB as the plate (which would be recommended, as it's stronger and more functional). If you're **handwiring** a PicoFX without a PCB, this can also be used for that. You're going to need to figure out how to mount the test/service buttons yourself though, as this isn't method won't be officially documented.  
 Use any type of filament for this step. SVG file for laser cutting is also available - a fully transparent plate would let you see the PCB silkscreen art! How cool would that be?  
 Recommended settings for beginners (aka, the ones I used):  
 * Infill: 80-100%
