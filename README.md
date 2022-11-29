@@ -18,7 +18,7 @@ This readme may be rather large, but don't let that intimiate you! I've included
 
 ## Components
 Many components listed below are optional. If you prefer to spend as little as possible on this build, they can be entirely omitted. In the case of the FR4 plate, leaving it out will require you to 3D print or laser cut a plate/case.  
-All prices below reflect the bare minimum cost of building **5 controllers** with PCBs and components from **JLCPCB and LCSC** respectively, as the minimum number of PCBs from JLCPCB per deisgn is 5. It's highly recommended to buy a few extra of each component in case any are damaged, lost, or DOA.
+All prices below reflect the bare minimum cost of building **5 controllers** with PCBs and components from **JLCPCB and LCSC** respectively, as the minimum number of PCBs from JLCPCB per deisgn is 5. Some components link to AliExpress as it's generally a good, cheap source for keycaps, switches, and other components LCSC won't have, at the cost of long shipping times. It's highly recommended to buy a few extra of each component in case any are damaged, lost, or DOA.
 
 | Part (per 1 controller) | Notes | Approximate Min. Cost (USD) |
 |-------------------------|-------|-----------------------------|
