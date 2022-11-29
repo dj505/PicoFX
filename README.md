@@ -4,6 +4,7 @@ A compact, feature-rich keyboard-style controller for Pump it Up simulators
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
 
 ![Completed controller](Pictures/PicoFX.jpg)
+
 [See it in action!](https://www.youtube.com/watch?v=75ObKhgJE3M)
 
 ## Table of Contents
@@ -16,27 +17,29 @@ This readme may be rather large, but don't let that intimiate you! I've included
 * [FAQ](#faq)
 
 ## Components
-Many components listed below are optional. If you prefer to spend as little as possible on this build, they can be entirely omitted. In the case of the FR4 plate, leaving it out will require you to 3D print or laser cut a plate/case.
+Many components listed below are optional. If you prefer to spend as little as possible on this build, they can be entirely omitted. In the case of the FR4 plate, leaving it out will require you to 3D print or laser cut a plate/case.  
+All prices below reflect the bare minimum cost of building **5 controllers** with PCBs and components from **JLCPCB and LCSC** respectively, as the minimum number of PCBs from JLCPCB per deisgn is 5. It's highly recommended to buy a few extra of each component in case any are damaged, lost, or DOA.
 
-- [Raspberry Pi Pico](https://www.digikey.ca/en/products/detail/raspberry-pi/SC0915/13624793) (**Not** Pico H, nothing with pre-soldered headers!)
-  - A Pico W should also work, but this project currently has no WiFi or Bluetooth functionality. This may change in the future.
-  - A Pico H would require female pin headers to be installed, as the headers are attached before the switches, but the Pico is installed after the switches. Installing the Pico too early would make 1 switch and LED impossible to solder.
-- 3D printed shell (to be added to the repo later)
-- 2x [right angle tactile switches](https://www.lcsc.com/product-detail/Tactile-Switches_C-K-PTS645VL392LFS_C285523.html)
-- 10x MX-compatible keyboard switches of your choosing
-- 10x MX-compatible keycaps, ideally a "flat" or uniform profile like DSA, XDA, F10, etc.
-  - Either ten 1u caps, or eight 1.25u caps and two 1u caps for more arcade-like sizing. Up to you!
-- **(OPTIONAL)** 4x M3*8mm pan head machine screws
-- **(OPTIONAL)** 10x LEDs for the switches (4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh))
-  - 10x [330Ohm 0805 SMD resistors](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.html) - only needed if using the above LEDs
-- **(OPTIONAL)** 6 [WS2812B LEDs](https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html) for underglow lighting
-  - Option 1: There are foorprints for 6 individual WS2812B LEDs **(PLCC4, 5x5mm)** around the perimiter of the case. There are hand-solder friendly 0805 capacitor footprints beside each LED, but these are only needed if you run into issues with the LEDs being unstable or acting erratically. This option will likely look nicer, but may be more difficult for beginners to solder.
-  - Option 2: A regular WS2812B strip cut down to 6 LEDs in length can be soldered to the three pins on the left hand side of the board (from the back) and adhered along the length of the PCB. This option is more friendly to beginners or those who aren't as confident with SMD soldering, but the lighting it provides isn't quite as even. **Requires jumping the "Strip Enable" pad.**
+| Part (per 1 controller) | Notes | Approximate Min. Cost (USD) |
+|-------------------------|-------|-----------------------------|
+|[Raspberry Pi Pico](https://www.digikey.ca/en/products/detail/raspberry-pi/SC0915/13624793)|**Not** Pico H, nothing with pre-soldered headers unless you use female headers on the PCB. A Pico W should also work, but this project currently has no WiFi or Bluetooth functionality. This may change in the future.|$4|
+|3D printed shell|Cost depends on whether or not you own a 3D printer (or know someone who does) and what service you use.|N/A|
+|2x [right angle tactile switches](https://www.lcsc.com/product-detail/Tactile-Switches_C-K-PTS645VL392LFS_C285523.html)|Recommendation - buy a couple extras just in case.|$0.96|
+|[10x keyboard switches](https://www.aliexpress.com/item/1005003810967081.html)|The ones linked here are what I used personally for the sake of a price estimate. You can pick any kind of switch you want. Ensure the switches you choose will accomodate the LEDs you pick!|$23.99|
+|[10x keycaps](https://www.aliexpress.com/item/32830177884.html)|Ideally a "flat" or uniform profile like DSA, XDA, F10, etc. Recommendation - source these on your own for better quality and prices.|$28.50|
+|[4x M3*8mm pan head machine screws](https://www.aliexpress.com/item/32811037821.html)|Black would look nice if you can source some. Screws should be pan head - countersunk screws will not sit flush, and it's not advisable to countersink fiberglass without amazing ventilation and a mask with filters.|$1.45|
+|**(OPTIONAL)** [10x LEDs](https://www.aliexpress.com/item/32685621460.html)|4x red, 4x blue, 2x yellow (or whichever colours you prefer tbh) - 3mm or smaller to fit your switches! Recommendation - source these yourself or find alternatives through LCSC.|$3.29|
+|10x [330Ohm 0805 SMD resistors](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.html)|Only needed if using the above LEDs.|$0.17|
+|**(OPTIONAL)** 6 [WS2812B LEDs](https://www.lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html)\*|For underglow lighting. **Definitely** buy extras - they're somewhat delicate and easy to break or burn out by mistake during installation.|$4.43|
+|Main PCB|Estimated price based on default options, but with a **lead-free HASL finish**.|$8.40|
+|**(OPTIONAL but recommended)** FR4 plate|Estimated price based on default options, but with a **lead-free HASL finish**.|$9.30|
+|_**Total Cost**_|This cost estimate reflects building **5 full PicoFX controllers**. If you're splitting the cost through a group buy, divide it by the number of people participating.|$84.89|
 
-- 1x Main PCB
-- **(OPTIONAL but recommended)** 1x FR4 plate
+\* There are a few options for RGB underglow depending on your needs and experience.  
+- Option 1: There are foorprints for 6 individual WS2812B LEDs **(PLCC4, 5x5mm)** around the perimiter of the case. There are hand-solder friendly 0805 capacitor footprints beside each LED, but these are only needed if you run into issues with the LEDs being unstable or acting erratically. This option will likely look nicer, but may be more difficult for beginners to solder.
+- Option 2: A regular WS2812B strip cut down to 6 LEDs in length can be soldered to the three pins on the left hand side of the board (from the back) and adhered along the length of the PCB. This option is more friendly to beginners or those who aren't as confident with SMD soldering, but the lighting it provides isn't quite as even. **Requires jumping the "Strip Enable" pad.**
 
-Feel free to use whichever switches and keycaps you want, as long as they're Cherry MX compatible!
+If you have any questions about the parts requirements, costs, or sourcing components, feel free to shoot me a message through Discord (dj505#6697) or open an issue here.
 
 ## Ordering the PCBs
 If you've never ordered PCBs before, don't worry! The process is super simple on most websites. These instructions are here to make sure each step is clear and straightforward, and to avoid accidentally ordering a set of boards with the wrong optons. Keep in mind, most manufacturers have a **minimum order number of 3-5**, which means you're going to need to order at least 3-5 of each PCB (main board and plate). **Feel free** to put together a group order with friends or sell the extras! I really don't mind others making and selling units, just make sure they're well made, thoroughly tested, and work properly (and consider [donating a couple bucks](https://ko-fi.com/dj505piu) if you can!)
@@ -98,6 +101,7 @@ You're done! Flash the firmware, install the bottom half of the case, and you're
 ## Flashing the Firmware
 
 [**Prebuilt PIUIO firmwares here!**](https://github.com/48productions/piuio-pico/releases/tag/v1.0.0)
+
 [**Prebuilt HID gamepad/keyboard firmware here!**](https://github.com/dj505/Pico-Game-Controller-PicoFX/releases/tag/v1.0.0)
 
 For the PIUIO firmware source, see the [piuio-pico](https://github.com/48productions/piuio-pico/) repository by [48productions](https://github.com/48productions). This firmware emulates a PIUIO board and can be used on Windows devices via IO2Key ([helpful installation video](https://www.youtube.com/watch?v=xo5m9dlNFfY) by Nirvash) or on Linux via a [custom kernel driver](https://github.com/DinsFire64/piuio) (installation instructions in the README). ***Do not*** use this firmware on any hand controller to play the latest official game online! It is considered cheating and you will be banned. Using any aspect of this project for prohobitied play on officially supported games is not endorsed, encouraged, or supported. However, do feel free to use this firmware to build a proper dance pad.
@@ -117,7 +121,9 @@ To install the firmware, plug in your Raspberry Pi Pico while holding the "BOOTS
     * If you're using this controller with IO2Key on Windows for StepF2/StepP1/StepPrime/StepPXX, underglow lighting will not work. Base StepMania or Project OutFox support lighting but extra manual configuration will need to be done, which I haven't had a chance to try yet. Linux users running StepMania or Project OutFox can use the kernel driver linked in [Flashing the Firmware](#flashing-the-firmware) for lighting support by editing Preferences.ini and editing the `LightsDriver` line to read `LightsDriver=PIUIO_Leds`.
 * Can I make this project USB C compatible somehow?
     * If you can find a Pico clone that uses USB C and is pin-compatible with the official Raspberry Pi Pico, you absolutely can. I can't provide official support for multiple boards though, otherwise this project would get really messy really fast.
-    
+* Can I build one of these without a PCB?
+    * Absolutely! Check out the "3D Prints" folder for 3D printable cases and plates. Be prepared to do a lot of tedious wire management and soldering, though! You'll also need to figure out how to mount the test and service buttons on your own.
+
 ## Special Thanks
 Thanks to
 - therathatter & 48productions (firmware things)
