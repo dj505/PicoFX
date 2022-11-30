@@ -11,7 +11,7 @@ A compact, feature-rich keyboard-style controller for Pump it Up simulators
 This readme may be rather large, but don't let that intimiate you! I've included as much information as possible to make sure this build is straightforward and beginner friendly. If you have any questions at all, feel free to shoot me a message through Discord (dj505#6697) or open an issue here.
 * [Component List](#components)
 * [Ordering the PCBs](#ordering-the-pcbs) (for first time/inexperienced builders)
-* [Ordering components](#ordering-components) (for first time/inexperienced builders)
+* [Ordering Components](#ordering-components) (for first time/inexperienced builders)
 * [How to Build](#how-to-build)
 * [Flashing the Firmware](#flashing-the-firmware)
 * [FAQ](#faq)
@@ -68,7 +68,7 @@ The ordering process generally looks something like this:
     * `The pads covered by solder mask on the top layer are OK and are an intended part of the design.`
 5. Finally, add your order to your cart! Once you have your desired orders ready, the rest of the process is identical to any other online shopping site. Pick your shipping option, pay, and you're good to go!
 
-## Ordering components
+## Ordering Components
 To make sourcing a little easier and cheaper, you can find all the small components for this project on [LCSC](https://lcsc.com). This doesn't include more specialized or larger parts such as keyboard switches, or hardware such as keycaps or screws.  
 The bare minimum numbers of each part per controller are listed below, but I would **highly recommend** ordering a few extras of each, as they're very small and can be easily lost or damaged. Thankfully they're very inexpensive and adding extras will only cost you a few cents to a dollar more. See the [Components section](#components) for a recap of what is/isn't optional and the alternatives for each.  
 * 6 x [WS2812B RGB LED](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html) (3 extra recommended per controller)
