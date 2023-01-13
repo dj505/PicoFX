@@ -3,7 +3,7 @@ A compact, feature-rich keyboard-style controller for Pump it Up simulators
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y8106HR)
 
-![Completed controller](Pictures/PicoFX.jpg)
+![Completed controller](Pictures/PicoFX.png)
 
 [See it in action!](https://www.youtube.com/watch?v=75ObKhgJE3M)
 
@@ -47,30 +47,30 @@ If you've never ordered PCBs before, don't worry! The process is super simple on
 Here are my recommendations:
 | Manufacturer | Minimum order number | Notes |
 |--------------|----------------------|-------|
-|JLCPCB        |5 PCBs per design     |New users get a reasonably large discount on their first few orders, unless this has changed since I used up all of mine. Easy quote/ordering process, most options are autodetected from the gerber file.|
-|PCBWay        |5 PCBs per design     |PCBWay also gives new users a reasonable discount on their first order. Unsure of the specifics, haven't used them yet. More options need to be manually specified during the quote/order process than with JLC.|
-|OSH Park      |3 PCBs per design     |Fewer options than the above two, but the minimum order number is smaller. Colour options are limited to purple and "after dark", a clear solder mask over black substrate so all the traces are visible. Overall a bit more costly, but shipping is generally as they're based in the United States.|
+|PCBWay        |5 PCBs per design     |Has sponsored the PicoFX, however opinions expressed are 100% my own. Offers several discount coupons for new users (first time order discount, coupons for completing a profile, etc). Straightforward order process, excellent quality end result. Also offers 3D printing, CNC, and PCB assembly, if needed. Recommended.|
+|JLCPCB        |5 PCBs per design     |Provides new user discounts. Straightforward order process, high quality end result. Also offers 3D printing and PCB assembly, if needed. Recommended.|
+|OSH Park      |3 PCBs per design     |Fewer options than the above two, but the minimum order number is smaller. Colour options are limited to purple and "after dark", a clear solder mask over black substrate so all the traces are visible (very cool but not very visible for this project). Overall a bit more costly, but shipping is generally faster as they're based in the United States.|
 
-PCBWay and some other manufacturers will likely need you to manually specify the PCB dimensions. To save you some time, here are the dimensions for both PCBs:
+Some manufacturers may need you to manually specify the PCB dimensions. To save you some time, here are the dimensions for both PCBs:
 | PCB | Width | Height |
 |-----|-------|--------|
 |Main board|120.7|70.6 mm|
 |Plate|139.1 mm|77.2 mm|
 
-The ordering process generally looks something like this:
-1. Download the gerber(s) you plan to order. The main PCB can be found in this repository's main `gerber` folder and is titled `gerber.zip`. Download it and ideally rename it to something like `main_board.zip` or anything that makes it clear which specific board it's for. If you plan to use the plate as well, browse to the `Case` folder, then to `Plate` and `gerber` where you can find the gerber.zip for the plate. Download and rename it accordingly as well. **None of the other files are needed - just the zip files.**
-2. Visit the manufacturer's website and look for the "Get Quote" or "Instant Quote" button, or a drag-and-drop section you can upload the gerber file to. Most sites generally only accpet one gerber at a time. Some sites have a "Different Design" option you may be tempted to set to "2" if you're ordering both boards - there's no need to do this. It makes the process more complicated and possibly more expensive. Simply add both PCBs to your cart individually and order them together once they're in there.
+The example order process described here is written with PCBWay in mind, but applies to most manufacturers. Be sure to sign up for an account beforehand and set up your delivery address/etc so you're good to go when you order.
+1. Download the gerber(s) you plan to order. Check the [releases](https://github.com/dj505/PicoFX/releases) page for the gerber zip files. **None of the other files are needed - just the zip files.**
+2. Visit the manufacturer's website and look for the "Quote Now" button. Choose the settings for and add both PCBs to your cart individually and order them together once they're in there.
 3. Punch in the necessary options. The majority of these don't need to be changed and you can leave them be, however I recommend making sure the following are correct for **both** PCBs:
-    * PCB thickness: 1.6
+    * PCB thickness: 1.6mm
     * Surface Finish: LeadFree HASL **OR** ENIG (gold finish, more expensive but really cool and higher quality, but only recommended for the main PCB as the plate doesn't have enough solder points to warrant it)
+        * HASL (with lead) can be used but I personally try to avoid it. Up to you.
     * Copper Weight: 1oz
-    * You can pick whichever solder mask colour you want - this is the colour your final boards will appear. If you want, you can have different colours for the main PCB and the plate!
-4. **Recommended, but optional** - For the main board, you may want to add a note to the order to clarify that one of the design choices used by the keyboard switch footprint is intentional. The top layer's solder points are covered by solder mask to give it a cleaner look, as no soldering will ever be done on that side. JLCPCB calls this note option "PCB Remark" and you can find it near the bottom of the page. The message I personally added to my order was
-    * `The pads covered by solder mask on the top layer are OK and are an intended part of the design.`
-5. Finally, add your order to your cart! Once you have your desired orders ready, the rest of the process is identical to any other online shopping site. Pick your shipping option, pay, and you're good to go!
+    * You can pick whichever solder mask colour you want - this is the colour your final boards will appear. If you want, you can have different colours for the main PCB and the plate! Just remember that the main PCB may not be visible except from the bottom, if the case you use is transparent.
+4. **Recommended, but optional** - For the main board, you may add a note to the order to clarify that one of the design choices used by the keyboard switch footprint is intentional. The top layer's solder points are covered by solder mask to give it a cleaner look, as no soldering will ever be done on that side. You can either specify this as a note when submitting the order or wait to be asked about it and explain then. PCBWay manufactured the files as provided without bringing it up, but JLCPCB contacted me to double check. Your mileage may vary.
+5. Once you have your desired orders ready in your cart, the rest of the process is identical to any other online shopping site. Pick your shipping option, pay, and you're good to go!
 
 ## Ordering Components
-To make sourcing a little easier and cheaper, you can find all the small components for this project on [LCSC](https://lcsc.com). This doesn't include more specialized or larger parts such as keyboard switches, or hardware such as keycaps or screws.  
+To make sourcing a little easier and cheaper, you can find all the small components for this project on [LCSC](https://lcsc.com). This doesn't include more specialized or larger parts such as keyboard switches, or hardware such as keycaps or screws. Check the recommended purchase links for those, or source them from sites like eBay, AliExpress, etc.  
 The bare minimum numbers of each part per controller are listed below, but I would **highly recommend** ordering a few extras of each, as they're very small and can be easily lost or damaged. Thankfully they're very inexpensive and adding extras will only cost you a few cents to a dollar more. See the [Components section](#components) for a recap of what is/isn't optional and the alternatives for each.  
 * 6 x [WS2812B RGB LED](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B-W_C2761795.html) (3 extra recommended per controller)
 * 10 x [0805 330ohm SMD resistor](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.html) (5 extra recommended per controller but they're so cheap you can order literally hundreds for well under a dollar total)
@@ -78,6 +78,8 @@ The bare minimum numbers of each part per controller are listed below, but I wou
 
 ## How To Build
 This build applies to the **full materials list**, including the FR4 plate and surface mount parts. Text descriptions will be provided for the optional alternatives, such as replacing SMD LEDs with LED strips or skipping the FR4 plate. Be sure to read through each step in its entirety before doing anything!
+
+**[Build process & guide video](https://youtu.be/5a2lHV3uc5E)** on YouTube
 
 1. **Solder the WS2812B LEDs in place.** If using an LED strip, skip this step and wait until step 9. The notch present on each LED should be positioned on the bottom right side. These can be finicky to solder - don't heat them for too long!
 ![WS2812B Installation](Pictures/Step1.jpg)
@@ -117,7 +119,7 @@ To install the firmware, plug in your Raspberry Pi Pico while holding the "BOOTS
 * Can I make and sell these, or sell extras?
     * Go ahead! However, do make sure they're well built and thoroughly tested, and consider [donating a few bucks](https://ko-fi.com/dj505piu) if you can!
 * Does this work with official games?
-    * Yes, **however** using a hand controller on any currently online and supported game (XX 20th Anniversary Edition at the time of writing, with a new game on the horizon) is considered cheating, especially during events. You may get the game/machine banned or blacklisted alongside your piugame account, and you may also be banned from official events. Not worth the risk! 
+    * Yes, **however** using a hand controller on any currently online and supported game (XX 20th Anniversary Edition at the time of writing, with a new game on the horizon) is considered cheating, especially during events. You may get the game/machine banned or blacklisted alongside your piugame account, and you may also be banned from official events. Not worth the risk!
 * Can I make this without any LEDs to start with and add them later?
     * Mostly. There is one in-switch LED that won't be reachable once the Pico is soldered in. If you plan to add LEDs later on, either install sockets of some kind to account for this without needing to solder later, or install the Pico with male/female pin headers so you can remove it later to install LEDs. All RGB underglow LEDs can be soldered at any time without removing the Pico.
 * How do I make the underglow work?
