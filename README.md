@@ -128,6 +128,8 @@ To install the firmware, plug in your Raspberry Pi Pico while holding the "BOOTS
     * If you can find a Pico clone that uses USB C and is pin-compatible with the official Raspberry Pi Pico, you absolutely can. I can't provide official support for multiple boards though, otherwise this project would get really messy really fast.
 * Can I build one of these without a PCB?
     * Absolutely! Check out the "3D Prints" folder for 3D printable cases and plates. Be prepared to do a lot of tedious wire management and soldering, though! You'll also need to figure out how to mount the test and service buttons on your own.
+* Can I make a hotswappable PicoFX?
+    * While there is no footprint for Kailh hotswap sockets or anything similar, you can technically use MillMax sockets. I wouldn't recommend it unless you really know what you're doing, though. It took me an hour to install the sockets alone, and I ruined three. This also makes LEDs complicated. Hotswap sockets for LEDs exist, but you could also try to solder surface mount LEDs to the through-hole pads if you want. I don't provide official support with this method but I do encourage you to get creative :) Maybe a future hardware revision will account for this.
 
 ## Special Thanks
 Thanks to
