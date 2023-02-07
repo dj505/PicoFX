@@ -10,3 +10,6 @@
 [submodule "WS2812B.pretty"]
 	path = WS2812B.pretty
 	url = https://github.com/madworm/WS2812B.pretty
+[submodule "Keebio-Parts.pretty"]
+	path = Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty
