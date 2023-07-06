@@ -119,7 +119,7 @@ To install the firmware, plug in your Raspberry Pi Pico while holding the "BOOTS
 * Can I make and sell these, or sell extras?
     * Go ahead! However, do make sure they're well built and thoroughly tested, and consider [donating a few bucks](https://ko-fi.com/dj505piu) if you can!
 * Does this work with official games?
-    * Yes, **however** using a hand controller on any currently online and supported game (XX 20th Anniversary Edition at the time of writing, with a new game on the horizon) is considered cheating, especially during events. You may get the game/machine banned or blacklisted alongside your piugame account, and you may also be banned from official events. Not worth the risk!
+    * Yes, **however** using a hand controller on any currently online and supported game (XX 20th Anniversary Edition and Phoenix at the time of writing) is considered cheating, especially during events. Hand controller play **can** be detected and you may get the game/machine banned or blacklisted alongside your piugame account, and you may also be banned from official events. Not worth the risk!
 * Can I make this without any LEDs to start with and add them later?
     * Mostly. There is one in-switch LED that won't be reachable once the Pico is soldered in. If you plan to add LEDs later on, either install sockets of some kind to account for this without needing to solder later, or install the Pico with male/female pin headers so you can remove it later to install LEDs. All RGB underglow LEDs can be soldered at any time without removing the Pico.
 * How do I make the underglow work?
