@@ -109,7 +109,7 @@ You're done! Flash the firmware, install the bottom half of the case, and you're
 
 For the PIUIO firmware source, see the [piuio-pico](https://github.com/48productions/piuio-pico/) repository by [48productions](https://github.com/48productions). This firmware emulates a PIUIO board and can be used on Windows devices via IO2Key ([helpful installation video](https://www.youtube.com/watch?v=xo5m9dlNFfY) by Nirvash) or on Linux via a [custom kernel driver](https://github.com/DinsFire64/piuio) (installation instructions in the README).
 
-### ***Do not*** use this firmware on any hand controller to play the latest official game online! It is considered cheating. Your machine and piugame profile will be banned, and you yorself can be banned from official events. Using any aspect of this project for prohobitied play on officially supported games is not endorsed, encouraged, or supported. However, do feel free to use this firmware to build a proper dance pad for legitimate play.
+### ***Do not*** use this firmware on any hand controller to play the latest official game online! It is considered cheating. Your machine and piugame profile will be banned, and you yorself can be banned from official events. Using any aspect of this project for prohibitied play on officially supported games is not endorsed, encouraged, or supported. However, do feel free to use this firmware to build a proper dance pad for legitimate play.
 
 If you plan to use this controller with simulators exclusively, see the HID gamepad/keyboard firmware linked above.
 
